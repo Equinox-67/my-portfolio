@@ -1,0 +1,20 @@
+.header {
+    height: 60px;
+    background-color: rgb(247, 239, 239);
+    color: rgb(165, 132, 132);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 0.15rem solid rgb(245, 222, 222);
+    margin-bottom: 0.3rem;
+  }
+  
+  .header-title {
+    line-height: 3.5rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+  }
+  
+  .add-project-button {
+    margin-right: 40px;
+  }
