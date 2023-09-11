@@ -1,12 +1,13 @@
-    .project-card-container {
+.project-card-container {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .card-container {
     display: flex;
     flex-direction: column;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 1rem 2.59rem 1rem 2.59rem;
     width: 20rem;
     height: 24rem;
     border: 0.1rem solid rgb(247, 239, 239);

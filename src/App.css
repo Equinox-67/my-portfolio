@@ -9,6 +9,13 @@
   pointer-events: none;
 }
 
+.detail-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0rem auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
