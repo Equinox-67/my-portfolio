@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import green from "@mui/material/colors/grey";
 import "./header.css";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(green[700]),
@@ -17,15 +18,32 @@ const ColorButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-export default function Header() {
+const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleAdd = () => {
+      navigate('/upsert');
+  }
+
+  const handleCancel = () => {
+      navigate('/');
+  }
+
   return (
     <>
       <div className="header">
         <div className="header-title">MURIPOUND RECORDS</div>
         <div className="add-project-button">
-          <ColorButton variant="contained">Add Project</ColorButton>
+          {
+              location.pathname === '/'
+                  ? <ColorButton variant="contained" onClick={handleAdd}>Add Project</ColorButton>
+                  : <ColorButton variant="contained" onClick={handleCancel}>Cancel</ColorButton>
+          }
         </div>
       </div>
     </>
   );
 }
+
+export default Header

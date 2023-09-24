@@ -1,14 +1,13 @@
-import "./App.css";
-import ProjectsPage from "./Components/ProjectsPage";
-import Header from "./Components/Header";
-import ProjectCard from "./Components/ProjectCard/index";
-import details from './mocks';
+import Header from "../Header";
+import ProjectCard from "../ProjectCard";
+import details from '../../mocks' ;
+import { RouterProvider } from 'react-router-dom';
+import "./index.css";
 
-function App() {
+function ProjectPage() {
   return (
     <div className="App">
       <Header />
-      <ProjectsPage />
       <div className="detail-list">
         {details.map((detail, index) => {
           return (
@@ -26,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProjectPage;

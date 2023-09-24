@@ -1,0 +1,13 @@
+.detail-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    column-gap: 3.2rem;
+    row-gap: 3rem;
+    margin: 3rem auto;
+}
+
+.detail-list .detail {
+    flex-basis: 28.05%;
+}
